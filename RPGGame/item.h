@@ -5,26 +5,25 @@
 // - Armor
 // - Consumable
 
-enum ItemRarity
-{
-	IR_None,
-	IR_Normal,
-	IR_Rare,
-	IR_Unique
-};
+#include "Enums.h"
 
 class Item
 {
+protected:
+	//Item();
+	Item(ItemType itemType);
 public:
-	Item();
 	virtual ~Item();
 
+public:
 	virtual void PrintInfo();
+	ItemType GetItemType() { return _itemType; }
 
 protected:
 	int _itemId = 0;
 	int _itemCount = 0;
 	ItemRarity _rarity = IR_Normal;
+	ItemType _itemType = IT_None;
 };
 
 class Weapon : public Item
@@ -51,7 +50,7 @@ public:
 	virtual void PrintInfo() override;
 
 	void SetDefence(int defence) { _defence = defence; }
-	int GetDamage() { return _defence; }
+	int GetDefence() { return _defence; }
 
 private:
 	int _defence = 0;
