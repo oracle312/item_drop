@@ -12,7 +12,7 @@ public:
 	Inventory();
 	~Inventory();
 
-	bool AddItem(Item* item);
+	bool AddItem(Item* item); 
 	bool RemoveItem(Item* item);
 	Item* GetItemAtSlot(int slot);
 
