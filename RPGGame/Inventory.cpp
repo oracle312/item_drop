@@ -22,7 +22,7 @@ bool Inventory::AddItem(Item* item)
 
 	_items[emptySlot] = item;
 	_itemCount++;
-	return true;
+	return true; 
 }
 
 bool Inventory::RemoveItem(Item* item)
