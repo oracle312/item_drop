@@ -7,7 +7,7 @@ Inventory::Inventory()
 		_items[i] = nullptr;
 }
 
-Inventory::~Inventory()
+Inventory::~Inventory() 
 {
 }
 
