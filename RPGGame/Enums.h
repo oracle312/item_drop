@@ -5,7 +5,7 @@ enum ItemRarity
 	IR_None,
 	IR_Normal,
 	IR_Rare,
-	IR_Unique
+	IR_Unique 
 };
 
 enum ItemType
