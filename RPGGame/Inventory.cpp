@@ -13,7 +13,7 @@ Inventory::~Inventory()
 
 bool Inventory::AddItem(Item* item)
 {
-	if (item == nullptr)
+	if (item == nullptr) 
 		return false;
 
 	int emptySlot = FindEmptySlot();
