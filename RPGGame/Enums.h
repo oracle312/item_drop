@@ -4,7 +4,7 @@ enum ItemRarity
 {
 	IR_None,
 	IR_Normal,
-	IR_Rare,
+	IR_Rare, 
 	IR_Unique 
 };
 
